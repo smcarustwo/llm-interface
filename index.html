@@ -22,7 +22,13 @@
           <div class="subtitle">Explore the functional and emotional range of generative AI agents by shaping and testing your own.</div>
         </div>
         <div class="triangles"></div>
-        <input type="button" class="next-button" id="page-landing-next" value="Reveal my agent's personality shape">
+        <div class="next-button" id="page-landing-next">
+          <div class="button-inner left"></div>
+          <div class="button-inner right"></div>
+          <div class="button-ornament top">•</div>
+          <div class="button-ornament bottom">•</div>
+          Reveal my agent's personality shape
+        </div>
       </div>
       <div class="footer">
         <img src="./ustwo-logo.svg">
@@ -34,6 +40,7 @@
           <div class="page-title">What kind of agent would you like to shape and test?</div>
           <div class="subtitle">Select a role and three personality keywords to give your agent a “personality shape” to refine.</div>
         </div>
+      <div class="cards-pip-container">
         <div class="card-interface">
           <div class="card active" id="Health">
           <div class="card-title-block">
@@ -247,8 +254,21 @@
           </div>
           <div class="spacer"></div>
         </div>
+      <div class="nav-pips">
+        <div class="pip" id="pip-health"></div>
+        <div class="pip" id="pip-financial"></div>
+        <div class="pip" id="pip-sales"></div>
+        <div class="pip" id="pip-productivity"></div>
+      </div>
+      </div>
         <div class="footer">
-          <input type="button" class="next-button" id="page-one-next" value="Reveal my agent's personality shape">
+          <div class="next-button" id="page-one-next">
+          <div class="button-inner left"></div>
+          <div class="button-inner right"></div>
+          <div class="button-ornament top">•</div>
+          <div class="button-ornament bottom">•</div>
+          Reveal my agent's personality shape
+        </div>
         </div>
       </div>
 
@@ -297,11 +317,17 @@
         </div>
         <div class="conversation-sample">
           <div class="block-title">Conversation Sample</div>
-          <div class="conversation-text">Hi there! I'm thrilled to be your customizable AI language model. I'm here to preview the emotional keywords that you define above. Together, we'll set realistic expectations for what emotional capacity an LLM can express. Ready to start?</div>
+          <div class="conversation-text">Hi there! I'm thrilled to be your customizable AI language model. I'm here to preview the emotional keywords that you define above.</div>
         </div>
       </div>
       <div class="footer">
-        <input type="button" id="page-two-next" class="next-button" value="I'm ready to test my agent">
+        <div id="page-two-next" class="next-button">
+          <div class="button-inner left"></div>
+          <div class="button-inner right"></div>
+          <div class="button-ornament top">•</div>
+          <div class="button-ornament bottom">•</div>
+          I'm ready to test my agent
+        </div>
       </div>
       </div>
 
@@ -330,6 +356,12 @@
         <div class="button test selected"><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14 7.72223C14.0019 8.45549 13.8306 9.17883 13.5 9.83334C13.108 10.6176 12.5054 11.2773 11.7597 11.7385C11.014 12.1997 10.1546 12.4441 9.27777 12.4444C8.54451 12.4464 7.82117 12.275 7.16666 11.9444L4 13L5.05555 9.83334C4.72496 9.17883 4.55364 8.45549 4.55555 7.72223C4.55589 6.84543 4.80034 5.98604 5.26151 5.24032C5.72268 4.4946 6.38236 3.892 7.16666 3.50002C7.82117 3.16942 8.54451 2.9981 9.27777 3.00002H9.55555C10.7135 3.0639 11.8072 3.55266 12.6273 4.37271C13.4473 5.19277 13.9361 6.28648 14 7.44445V7.72223Z" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>Test</div>
+        <div class="button share"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.83203 8.5V14.1667C2.83203 14.5424 2.98129 14.9027 3.24696 15.1684C3.51264 15.4341 3.87297 15.5833 4.2487 15.5833H12.7487C13.1244 15.5833 13.4848 15.4341 13.7504 15.1684C14.0161 14.9027 14.1654 14.5424 14.1654 14.1667V8.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.3346 4.25002L8.5013 1.41669L5.66797 4.25002" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.5 1.41669V10.625" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+Share</div>
       </div>
       <div class="conversation-interface">
         <div class="message-scroll-area">
@@ -367,12 +399,6 @@
           </div>
         </div>
         <div class="input-area">
-          <div class="share-floater"><svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M2.83398 8.5V14.1667C2.83398 14.5424 2.98324 14.9027 3.24892 15.1684C3.51459 15.4341 3.87493 15.5833 4.25065 15.5833H12.7507C13.1264 15.5833 13.4867 15.4341 13.7524 15.1684C14.0181 14.9027 14.1673 14.5424 14.1673 14.1667V8.5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M11.3327 4.24996L8.49935 1.41663L5.66602 4.24996" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M8.5 1.41663V10.625" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            Share my agent</div>
           <div class="preselected-input-messages">
             <div class="message">I want to develop healthier eating habits</div>
             <div class="message">I want to focus on my mental health</div>

@@ -42,7 +42,7 @@ body {
     padding: 2em;
     display: flex;
     flex-direction: column;
-    align-items: center;
+/*    align-items: center;*/
     justify-content: space-around;
     gap: 1em;
     height: calc(100dvh - 4em);
@@ -169,13 +169,21 @@ body {
     font-family: "DM Serif Display", serif;
 }
 
-input.next-button {
+.next-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     background-color: rgba(255, 255, 255, 0);
     color: #333333;
     outline: none;
-    border: 1px solid #777777;
-    border-radius: 0;
+    border: none;
+/*    border-right: none;*/
+/*    border-left: none;*/
+/*    border-top: 1px solid #777777;*/
+/*    border-bottom: 1px solid #777777;*/
+/*    border-radius: 0;*/
     padding-top: 0.75em;
     padding-bottom: 0.75em;
     font-family: "DM Serif Display", serif;
@@ -184,7 +192,47 @@ input.next-button {
     z-index: 100;
 }
 
-input.next-button:active {
+.next-button .button-inner.left {
+    width: 45%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-top: 1px solid #777777;
+    border-bottom: 1px solid #777777;
+}
+
+.next-button .button-inner.right {
+    width: 45%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    right: 0;
+    position: absolute;
+    border-top: 1px solid #777777;
+    border-bottom: 1px solid #777777;
+}
+
+.next-button .button-ornament {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    line-height: 0;
+    left: 0;
+}
+
+.next-button .button-ornament.top {
+    top: 0;
+}
+.next-button .button-ornament.bottom {
+    bottom: 0;
+}
+
+.next-button:active {
     background-color: rgba(255, 255, 255, 0.1);
 }
 

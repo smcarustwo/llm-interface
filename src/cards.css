@@ -78,7 +78,7 @@
     /* max-height: calc(100% - 2em); */
     margin: 0.75em;
     padding: 2em;
-    border-radius: 0.75em;
+    border-radius: 0.5em;
     box-shadow: 2px 2px 0.5em rgba(0, 0, 0, 0.25);
     flex-grow: 0;
     flex-shrink: 0;
@@ -115,7 +115,7 @@
 .card .traits-block .keywords {
     display: flex;
     flex-direction: column;
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 
 .card .traits-block .keywords .an {
@@ -257,7 +257,7 @@
     display: flex;
     align-items: start;
     justify-content: start;
-    font-size: 1em;
+    font-size: 0.85em;
 }
 
 .card.active {
@@ -284,6 +284,47 @@
     color: #2A7009;
     stroke: #2A7009;
 }
+
+.cards-pip-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.nav-pips {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.nav-pips .pip {
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    border: 1px solid #555555;
+    background-color: unset;
+    transition: background-color 0.25s;
+}
+
+.health-coach-bg .nav-pips .pip#pip-health {
+    background-color: #555555;
+}
+
+.financial-adviser-bg .nav-pips .pip#pip-financial {
+    background-color: #555555;
+}
+
+.sales-representative-bg .nav-pips .pip#pip-sales {
+    background-color: #555555;
+}
+
+.productivity-partner-bg .nav-pips .pip#pip-productivity {
+    background-color: #555555;
+}
+
 
 @media screen and (min-width: 500px)  {
 

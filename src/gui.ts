@@ -21,9 +21,9 @@ const pageTwo: HTMLDivElement = document.querySelector(".page.two")!
 const pageThree: HTMLDivElement = document.querySelector(".page.three")!
 const pageFour: HTMLDivElement = document.querySelector(".page.four")!
 
-const nextButtonLandingPage: HTMLInputElement = document.querySelector("input#page-landing-next")!
-const nextButtonPageOne: HTMLInputElement = document.querySelector("input#page-one-next")!
-const nextButtonPageTwo: HTMLInputElement = document.querySelector("input#page-two-next")!
+const nextButtonLandingPage: HTMLDivElement = document.querySelector("#page-landing-next")!
+const nextButtonPageOne: HTMLDivElement = document.querySelector("#page-one-next")!
+const nextButtonPageTwo: HTMLDivElement = document.querySelector("#page-two-next")!
 
 // Unload landing page and load page one
 
